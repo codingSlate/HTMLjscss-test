@@ -25,12 +25,17 @@
       footer {
         background-color: rgb(194, 128, 255);
       }
+      header,
+      main,
+      footer {
+        border: 2px solid orange;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <header>I am header</header>
-      <main>I am main body</main>
+      <header>I am header</header> 
+      <main>I am main body</main> 
       <footer>I am footer</footer>
     </div>
     <style>
@@ -38,12 +43,16 @@
         display: flex;
         color: white;
         height: 50vh;
+        flex-wrap:wrap;
       }
 
       header,
       main,
       footer {
         margin: auto;
+      }
+      footer{
+/* margin-left:auto */
       }
     </style>
   </body>

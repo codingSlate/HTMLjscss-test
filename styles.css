@@ -3,6 +3,9 @@
 *::before {
   box-sizing: border-box;
 }
+.wrapper {
+  border: 2px solid gold;
+}
 
 header {
   background-color: blueviolet;

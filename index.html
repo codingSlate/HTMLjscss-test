@@ -7,6 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
       .wrapper {
         border: 2px solid gold;
       }
@@ -28,5 +33,17 @@
       <main>I am main body</main>
       <footer>I am footer</footer>
     </div>
+    <style>
+      .wrapper {
+        display: flex;
+        color: white;
+      }
+
+      header,
+      main,
+      footer {
+        margin: auto;
+      }
+    </style>
   </body>
 </html>

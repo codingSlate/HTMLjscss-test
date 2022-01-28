@@ -4,15 +4,12 @@
   box-sizing: border-box;
 }
 .wrapper {
-  border: 2px solid gold;
+  display: flex;
 }
 
 header {
-  background-color: blueviolet;
 }
 main {
-  background-color: rgb(167, 81, 247);
 }
 footer {
-  background-color: rgb(194, 128, 255);
 }

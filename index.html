@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
       *,
       *::after,
       *::before {
         box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        display: block;
+        background-color: rgba(255, 255, 255, 0.3);
       }
       .wrapper {
         border: 2px solid gold;
@@ -34,13 +41,19 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>I am header</header> 
-      <main>I am main body</main> 
-      <footer>I am footer</footer>
+      <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Abou</a>
+        </nav>
+      </header>
+      <!-- <main>I am main body</main>
+      <footer>I am footer</footer> -->
     </div>
     <style>
       .wrapper {
-        display: flex;
+        /* display: flex; */
         color: white;
         height: 50vh;
       }
@@ -48,10 +61,26 @@
       header,
       main,
       footer {
-        margin: auto;
+        /* margin: auto ; */
       }
-      footer{
-/* margin-left:auto */
+      footer {
+        /* margin-left:auto */
+      }
+
+      /* navigation */
+      header nav {
+        display: flex;
+        /* * flex-direction: row;
+   * flex-wrap: wrap; */
+        flex-flow: row wrap;
+        justify-content: flex-end;
+      }
+    </style>
+    <style>
+      @media all and (max-width: 500px) {
+        header nav {
+          flex-flow: column wrap;
+        }
       }
     </style>
   </body>
